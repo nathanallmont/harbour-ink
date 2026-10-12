@@ -1,0 +1,9 @@
+{
+  "name": "harbour-ink",
+  "version": "0.1.0",
+  "description": "Harbour Ink Engraved: a dark, hairline design system (tokens and five React primitives).",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "src/theme.js"
+}

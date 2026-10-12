@@ -1,0 +1,32 @@
+/* The same tokens as src/theme.js, as CSS variables, for projects that do not use the JS object. */
+:root {
+  --hi-bg: #0b141a;
+  --hi-panel: #16242e;
+  --hi-panel-raised: #1c2c37;
+  --hi-panel-warm: #1b1a1c;
+  --hi-panel-critical: #1e1618;
+  --hi-rule: #1b2b34;
+  --hi-border: #2c4250;
+  --hi-border-active: #3a5665;
+  --hi-bracket: #5e7a85; /* line colour only, never type */
+  --hi-text: #eaf2f3;
+  --hi-text-secondary: #a8bfc6;
+  --hi-muted: #728c96;
+  --hi-text-dim: #76909b;
+  --hi-accent-deep: #1a5f59;
+  --hi-accent: #2e9488;
+  --hi-accent-soft: #4fb5a8;
+  --hi-accent-bright: #6fcfc1;
+  --hi-on-accent: #eaf2f3;
+  --hi-ember: #e08a5c;
+  --hi-critical: #d9584b;
+  --hi-critical-text: #f0796b;
+}
+
+body {
+  background: var(--hi-bg);
+  color: var(--hi-text);
+  font-variant-numeric: tabular-nums; /* every number is set in the mono face so columns share one grid */
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
