@@ -37,7 +37,7 @@ One cool family, one warm note. Warm is the only thing that says "look here".
 | `src/theme.js` | The tokens as a JS object (`theme.panel`, `theme.accentBright`, ...) |
 | `src/tokens.css` | The same tokens as CSS variables, for projects without the JS object |
 | `src/fonts.js` | Loads Bebas Neue, Manrope and JetBrains Mono with `next/font/google` |
-| `src/components/Block.js` | The card: corner angle, bold bright heading on a tinted band, hairline rule. `raised` for the one hero card, `tone="warm"` or `"critical"` for alerts |
+| `src/components/Block.js` | The card: corner angle, quiet heading, hairline rule. `raised` for the one hero card, `tone="warm"` or `"critical"` for alerts |
 | `src/components/Cap.js` | Condensed caption text whose letter-spacing tightens as it grows |
 | `src/components/CornerBracket.js` | The 7px corner mark used instead of focus rings and bullets |
 | `src/components/TickRuler.js` | A strip of ticks used instead of every progress bar, with run, span and marker overlays |

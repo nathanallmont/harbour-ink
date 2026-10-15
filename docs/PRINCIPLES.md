@@ -29,7 +29,7 @@ There is one cool family (the teal accent and the blue-greys) and one warm note 
 
 | Role | Face | Notes |
 |---|---|---|
-| Headings and labels | Bebas Neue (`font-cap`) | The card heading is 21px (17px on a narrow phone), bold, `accentBright`, with a soft glow |
+| Headings and labels | Bebas Neue (`font-cap`) | The card heading is 14px, regular, in the secondary text colour, with no band and no glow; the one hero card's is 16px in `accentBright` |
 | Body | Manrope (`font-body`) | 13 to 13.5px, line height about 1.6 |
 | Every number | JetBrains Mono (`font-mono`) | Tabular figures, so columns share one grid |
 
