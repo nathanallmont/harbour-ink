@@ -6,6 +6,10 @@ A dark, cool, hairline design system: one teal accent, one warm signal colour, f
 
 *Real components, rendered from this repository.*
 
+## Why this exists
+
+Most dark dashboards use five colours and a glow. This uses two: **teal is structure** (cards, buttons, tabs) and **amber is data** (every number that sits in a sentence). That one rule, held everywhere, is what makes a busy screen calm. Designed by [@nathanallmont](https://github.com/nathanallmont) for a real home-energy dashboard; the live preview page is in `docs/index.html`.
+
 ## The four cards
 
 The card is the one container. `raised` is the single hero card on a screen; `warm` and `critical` are for things that need a look.

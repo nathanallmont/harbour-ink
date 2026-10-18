@@ -1,0 +1,42 @@
+/* Amber Clad / Harbour Ink Engraved — design tokens as CSS variables (dark theme only).
+   Same values as source/theme.js. Fonts: Bebas Neue (caps), Manrope (body), JetBrains Mono (numerals). */
+:root {
+  /* surfaces */
+  --bg: #0B141A;
+  --panel: #16242E;
+  --panel-raised: #1C2C37;
+  --panel-warm: #1B1A1C;      /* amber-tinted card ground */
+  --panel-critical: #1E1618;  /* alert ground */
+
+  /* lines */
+  --rule: #1B2B34;            /* hairline under card headings */
+  --border: #2C4250;
+  --border-active: #3A5665;
+  --bracket: #5E7A85;
+
+  /* text */
+  --text: #EAF2F3;
+  --text-secondary: #A8BFC6;
+  --muted: #728C96;
+  --text-dim: #76909B;
+
+  /* teal accent (structure: buttons, active tab, selected toggle, meter series) */
+  --accent-deep: #1A5F59;
+  --accent: #2E9488;
+  --accent-soft: #4FB5A8;
+  --accent-bright: #6FCFC1;
+  --on-accent: #EAF2F3;
+
+  /* AMBER ("ember"): every figure inside a sentence, every tile corner bracket, the "normal" reference line */
+  --ember: #E08A5C;           /* rgb(224,138,92) */
+
+  /* status */
+  --critical: #D9584B;
+  --critical-text: #F0796B;
+  --charge: #4FAE72;          /* battery charging (green) */
+  --info: #4C8DD9;            /* blue: "home used", export, Normal status dot */
+
+  --font-cap: "Bebas Neue", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}

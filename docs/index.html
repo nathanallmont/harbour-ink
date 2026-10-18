@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harbour Ink Engraved: live preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;padding:24px 16px;background:var(--bg);color:var(--text);font-family:var(--font-body),sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;display:grid;gap:20px}
+h1{font-family:var(--font-cap);font-weight:400;letter-spacing:.14em;font-size:22px;margin:0;color:var(--accent-bright)}
+.sub{color:var(--text-dim);font-size:14px;margin:4px 0 0}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:inset 0 1px 0 #FFFFFF0A;overflow:hidden}
+.card.raised{background:var(--panel-raised);border-color:var(--border-active)}
+.hd{display:flex;align-items:center;gap:10px;padding:13px 16px 11px}
+.br{width:7px;height:7px;border-left:1px solid var(--ember);border-top:1px solid var(--ember)}
+.cap{font-family:var(--font-cap);letter-spacing:.12em;font-size:14px;color:var(--text-secondary)}
+.hd .line{flex:1;height:1px;background:var(--rule)}
+.hd .tag{font-family:var(--font-cap);font-size:9.5px;letter-spacing:.1em;color:var(--text-dim)}
+.bd{padding:20px 24px}
+.hero .hd{background:#2E94880F}
+.dot{width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px #2E94888A}
+.hero .cap{font-size:16px;color:var(--accent-bright);letter-spacing:.14em}
+.a{color:var(--ember)}
+.tiles{display:flex;gap:18px;flex-wrap:wrap}
+.tw{display:flex;flex-direction:column;align-items:center;gap:6px;width:112px}
+.lab{font:500 11px/1.1 var(--font-mono);letter-spacing:.08em;color:var(--text-secondary);text-transform:uppercase;text-align:center}
+.tile{position:relative;width:88px;height:88px;border:1px solid var(--border);border-radius:12px;border-top-right-radius:26px;background:var(--panel);box-shadow:inset 0 1px 0 #FFFFFF0A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
+.tile.warm{background:var(--panel-warm);border-color:#E08A5C4D;box-shadow:none}
+.tile .b{position:absolute;left:7px;top:7px;width:7px;height:7px;border-left:1px solid var(--ember);border-top:1px solid var(--ember)}
+.tile .v{font:600 28px/1 var(--font-mono);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.tile.warm .v{color:var(--ember)}
+.ruler{width:56px;height:9px;position:relative;background-image:repeating-linear-gradient(to right,var(--border) 0 1px,transparent 1px 7px)}
+.ruler i{position:absolute;left:0;top:50%;height:2px;transform:translateY(-50%);background:var(--accent)}
+.tile.warm .ruler i{background:var(--ember)}
+.capn{font:500 10.5px/1.1 var(--font-mono);letter-spacing:.08em;color:var(--text-dim);text-align:center;min-height:3.3em}
+.capn.w{color:var(--ember)}
+.tog{display:flex;gap:8px;font-family:var(--font-cap);font-size:12px;letter-spacing:.1em}
+.tog span{padding:6px 12px;border-radius:6px;border:1px solid var(--border);color:var(--text-secondary)}
+.tog span.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.alert{background:var(--panel-critical);border:1px solid var(--critical);color:var(--critical-text);border-radius:4px;padding:8px 12px;font:13px var(--font-mono)}
+.alert b{font-weight:400;color:var(--text)}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.sw div{border:1px solid var(--border);border-radius:6px;overflow:hidden;font:11px var(--font-mono);color:var(--text-secondary)}
+.sw i{display:block;height:40px}.sw span{display:block;padding:6px 8px}
+p{margin:0 0 8px;font-size:15px;line-height:1.5}
+svg text{font:11px var(--font-mono);fill:var(--text-dim)}
+</style></head><body><div class="wrap">
+<div><h1>HARBOUR INK ENGRAVED · LIVE PREVIEW</h1><p class="sub">One teal accent, one warm signal colour. Teal is structure, amber is data. Sample numbers.</p></div>
+
+<div class="card"><div class="hd"><span class="br"></span><span class="cap">PALETTE</span><span class="line"></span></div><div class="bd"><div class="sw">
+<div><i style="background:#0B141A"></i><span>bg #0B141A</span></div>
+<div><i style="background:#16242E"></i><span>panel #16242E</span></div>
+<div><i style="background:#1C2C37"></i><span>raised #1C2C37</span></div>
+<div><i style="background:#2C4250"></i><span>border #2C4250</span></div>
+<div><i style="background:#2E9488"></i><span>accent #2E9488</span></div>
+<div><i style="background:#6FCFC1"></i><span>bright #6FCFC1</span></div>
+<div><i style="background:#E08A5C"></i><span>AMBER #E08A5C</span></div>
+<div><i style="background:#4FAE72"></i><span>charge #4FAE72</span></div>
+<div><i style="background:#4C8DD9"></i><span>info #4C8DD9</span></div>
+<div><i style="background:#D9584B"></i><span>critical #D9584B</span></div>
+</div></div></div>
+
+<div class="card"><div class="hd"><span class="br"></span><span class="cap">INSTRUMENT TILES</span><span class="line"></span><span class="tag">AMBER BRACKET ON EVERY TILE</span></div><div class="bd"><div class="tiles">
+<div class="tw"><span class="lab">Saved today</span><div class="tile"><span class="b"></span><span class="v">£3.12</span><div class="ruler"><i style="width:62%"></i></div></div><span class="capn">est. £4.80 without solar<br>self-sufficient 62%</span></div>
+<div class="tw"><span class="lab">Battery left</span><div class="tile"><span class="b"></span><span class="v">78%</span><div class="ruler"><i style="width:78%"></i></div></div><span class="capn">&nbsp;</span></div>
+<div class="tw"><span class="lab">Imported today</span><div class="tile"><span class="b"></span><span class="v">6.4</span><div class="ruler"><i style="width:30%"></i></div></div><span class="capn">kWh</span></div>
+<div class="tw"><span class="lab">Warm tone</span><div class="tile warm"><span class="b"></span><span class="v">245V</span><div class="ruler"><i style="width:55%"></i></div></div><span class="capn w">grid voltage</span></div>
+</div></div></div>
+
+<div class="card raised hero"><div class="hd"><span class="dot"></span><span class="cap">BATTERY</span><span class="line" style="background:#2E948826"></span><span class="tag">HERO CARD · ONE PER SCREEN</span></div><div class="bd">
+<p>If the grid failed now the battery would keep the house running for <span class="a">4 h 20 min</span>.</p>
+<p>Target <span class="a">98%</span> · <span class="a">40 min</span> &nbsp;·&nbsp; peak <span class="a">4.2 kW</span> <span class="a">18:05</span></p>
+<p style="color:var(--text-dim);font-size:13px">Figures inside a sentence are always amber. Everything around them is grey or teal.</p></div></div>
+
+<div class="card"><div class="hd"><span class="br"></span><span class="cap">NIGHT BASELINE</span><span class="line"></span>
+<div class="tog"><span class="on">THIS MONTH</span><span>BY MONTH</span></div></div><div class="bd">
+<svg viewBox="0 0 640 170" width="100%" role="img" aria-label="Bar chart with amber reference line">
+<line x1="40" x2="630" y1="140" y2="140" stroke="#2C4250"/>
+<g fill="#2E9488"><rect x="60" y="80" width="14" height="60"/><rect x="100" y="70" width="14" height="70"/><rect x="140" y="88" width="14" height="52"/><rect x="180" y="60" width="14" height="80"/><rect x="220" y="78" width="14" height="62"/><rect x="260" y="92" width="14" height="48"/><rect x="300" y="66" width="14" height="74"/><rect x="340" y="84" width="14" height="56"/><rect x="380" y="74" width="14" height="66"/><rect x="420" y="90" width="14" height="50"/></g>
+<line x1="40" x2="630" y1="82" y2="82" stroke="#E08A5C" stroke-width="1.5"/>
+<text x="640" y="78" text-anchor="end" style="fill:#E08A5C">Normal 38 W</text>
+<g><rect x="40" y="154" width="10" height="10" fill="#2E9488"/><text x="56" y="163">Meter</text><rect x="110" y="157" width="12" height="2" fill="#E08A5C"/><text x="128" y="163">Normal</text></g>
+</svg></div></div>
+
+<div class="alert">INVERTER STATUS 3 · NOT NORMAL <b>Check the Sunsynk app for the reason.</b></div>
+</div></body></html>
